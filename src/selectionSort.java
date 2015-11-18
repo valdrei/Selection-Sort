@@ -2,7 +2,7 @@
 
 public class selectionSort {
 
-	public int[] fazerSelecao( int[] lista ){
+	public static int[] fazerSelecao( int[] lista ){
 		for (int i = 0; i < lista.length - 1; i++)
         {
             int index = i;
@@ -16,5 +16,17 @@ public class selectionSort {
         }
 
 		return lista;
+	}
+	
+	public static void main(String[] args) {
+		
+		int[] lista1={18,1,6,8,4,10,2,3,7};
+		int[] lista2= fazerSelecao(lista1); 
+		
+		for(int i:lista2){
+			 System.out.print(i);
+	         System.out.print(", ");
+	
+		}
 	}
 }
